@@ -37,8 +37,3 @@ elif (optionUser not in range(1,3)):
 else:
     printingMessage()
     print('\n Perdiste mi rey')
-    
-
-
-
-
