@@ -3,9 +3,9 @@
 """
 Puedo hacer slicing de un dataframe y este me retornará las filas del dataframe
 
-Si quiero filtrar por una columna solo es necesario que ponga el nombre de la columna
+Si quiero filtrar por una columna solo es necesario que ponga el nombre del dataframe y el nombre de la columna
 Entre corchetes cuadrados, pero si quiero filtrar por dos o más columnas tengo que poner
-dos corchetes cuadrados para que no genere error
+dos corchetes cuadrados y dentro del segundo corchete cuadrado poner las columnas que quiero para que no genere error
 
 Para filtrar por filas utilizamos loc, con loc podemos hacer un slicing y retornará desde la posicion inicial
 hasta la posición final, sin excluir ninguna, tambien podemos especificarle de que "label" (columna)
