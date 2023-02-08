@@ -31,6 +31,8 @@ import numpy as np
 
 df_books = pd.read_csv('bestsellers-with-categories_e591527f-ae45-4fa5-b0d1-d50142128fa6.csv', sep=',', header=0)
 
+print(df_books.loc[0:10, ['Name', 'Author']])
+
 columna_eliminada = df_books.drop(['Name', 'Genre'], axis=1).head(2)
 print(columna_eliminada)
 
@@ -48,3 +50,4 @@ print(df_books)
 
 df_books = pd.concat([df_books, df_books])
 print(df_books)
+

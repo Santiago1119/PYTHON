@@ -16,7 +16,8 @@ el cual solo trae los valores que tengan el mismo nombre de columnas, podemos as
 traera todos los valores de la izquierda y donde no sean iguales las columnas a la derecha pondrá NaN o "right" que
 hace lo mismo que left
 
-
+Con "join" se puede hacer lo mismo que con merge pero especificando los indices de los dataframes
+tambien se le puede dar la propiedad "how=" con los valores left, right, join y outer
 
 
 """
@@ -52,6 +53,16 @@ print(df_der)
 
 # print(df_izq.merge(df_der, on='key'))
 print(df_izq.merge(df_der, left_on='key', right_on='key_2', how='left'))
+
+df_izq_join = pd.DataFrame({'A':['A1', 'A1', 'A2'],
+                    'B':['B0', 'B1', 'B2']},
+                    index=['k0', 'k1', 'k2'])
+
+df_der_join = pd.DataFrame({'C':['C0', 'C1', 'C2'],
+                    'D':['D0', 'D1', 'D2']},
+                    index=['k0', 'k2', 'k3'])
+
+print(df_izq_join.join(df_der_join, how="left"))
 
 
 
