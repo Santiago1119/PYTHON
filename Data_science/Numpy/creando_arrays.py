@@ -5,7 +5,7 @@ Con la función arange podemos definir un arreglo con valores numericos excluyen
 y como tercer parametro se le puede pasar como parametro el paso en el que se quiere enlistar
 
 
-Para crear un array con zeros utilizamos la función np.zeros y el numero de ceros y las dimensiones que necesitamos
+Para crear un array con ceros utilizamos la función np.zeros y las dimensiones que necesitamos
 esto nos sirve para definir la estructura de un arreglo (Se puede hacer lo mismo con np.ones)
 
 Para crear un array con valores dentro de un rango utilizamos linspace, y tambien podemos especificar cuantos valores

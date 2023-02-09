@@ -12,7 +12,7 @@ Out: [1, 2, 1, 2]
 Con numpy se puedes realizar estas operaciones, y tambien se pueden realizar 
 operaciones entre arreglos o matrices, pero deben ser del mismo tamaño
 
-Podemos sacar el producto punto de una matriz con 
+Podemos sacar el producto punto de una matriz con matmul
 
 o podemos hacerla con un arroba en medio de dos matrices
 
